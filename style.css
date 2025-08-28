@@ -1,0 +1,24 @@
+/* h1,h2{
+    background-color: aqua;
+}
+
+#heading1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(40, 47, 47);
+} */
+/* 
+div p{
+    background-color: red;
+}
+
+div>p{
+    background-color: aqua;
+}
+
+div +p{
+    background-color: yellow;
+} */
+
+p:nth-child(2){
+    background-color: blue;
+}
