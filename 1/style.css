@@ -1,0 +1,123 @@
+body{
+    background-color: aquamarine;
+}
+.nav-belt{
+    background-color: #131921;
+    height: 60px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.container{
+    display: grid;
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; */
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100px 70px 500px 50px;
+    border: 1px solid red;
+}
+.header{
+    background-color: chartreuse;
+    grid-column-start: 1;
+    grid-column-end:5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border: 1 px solid black;
+}
+.subheader{
+    grid-column-start: 1;
+    grid-column-end:5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #232F3e;
+    border: 5 px solid black;
+}
+.child1,.child2,.child3,.child4{
+    background-color: #679ed1;
+    border: 2px dotted rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    /* width: 300px;
+    height: 300px; */
+}
+.child11{
+    width: 100px;
+    height: 100px;
+    border: 2px dotted red;
+    background-color: aquamarine;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.child12{
+    width: 100px;
+    height: 100px;
+    border: 1px dotted cyan;
+    background-color: brown;
+    margin-top: 20px;
+}
+.child13{
+    width: 100px;
+    height: 100px;
+    border: 1px dotted blueviolet;
+    background-color: purple;
+    margin-left: 20px;
+}
+.child14{
+    width: 100px;
+    height: 100px;
+    border: 1px dotted rosybrown;
+    background-color: coral;
+    
+}
+
+.child2{
+    background-color: red;
+    border: 1px dotted white;
+    /* width: 300px;
+    height: 300px; */
+}
+
+.child3{
+    background-color: green;
+    border: 1px solid yellow;
+    /* width: 300px;
+    height: 300px; */
+}
+
+.child4{
+    background-color: beige;
+    border: 1px solid blue;
+    /* width: 300px;
+    height: 300px; */
+}
+
+/* div:nth-child(2){
+    background-color: #221f1f;
+    border: solid white;
+    width: 300px;
+    height: 300px;
+} */
+/* p:nth-of-type(3){
+    color: aqua;
+    background-color: #fff;
+}
+p:nth-child(3){
+    color: aqua;
+    background-color: #fff;
+} */
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border: 1px solid black;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
