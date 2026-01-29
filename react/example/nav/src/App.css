@@ -1,0 +1,26 @@
+.App{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column; /* stack cards vertically */
+  align-items: center;    /* center horizontally */
+  justify-content: center; /* center vertically if height is large */
+  min-height: 80vh;
+  gap: 20px; /* space between cards */
+}
+
+.card {
+  display: flex;
+  flex-direction: column; /* vertical layout inside card */
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  background-color: #fff;
+}

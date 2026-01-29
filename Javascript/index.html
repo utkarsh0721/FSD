@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function display() {
+            // alert("hiiiii");
+            event.preventDefault();
+            const myname = document.getElementById(`myname`).value;
+            const branch = document.getElementById("branch").value;
+            const skills = document.getElementById("skills").value;
+            const college = document.getElementById("college").value;
+            const university = document.getElementById("university").value;
+            // alert("hiiii " + myname);
+
+
+            document.getElementById("output").innerHTML =
+                `<h3>Details:</h3>
+                Name: ${myname}<br>
+                Branch: ${branch}<br>
+                Skills: ${skills}<br>
+                College: ${college}<br>
+                University: ${university}`;
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h3 {
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form>
+        <label>Enter name:</label>
+        <input type="text" id="myname" name="myname">
+        <br>
+        <label>Branch</label>
+        <select name="branch" id="branch">
+            <option value="CSE">CSE</option>
+            <option value="IT">IT</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="MECH">MECH</option>
+        </select>
+
+        <br>
+        <label class>Skills</label>
+        <input type="text" id="skills">
+        <br>
+
+        <label>College</label>
+        <input type="text" id="college">
+        <br>
+
+        <label>University</label>
+        <input type="text" id="university">
+        <br>
+
+        <button onclick="display()">Display</button>
+
+    </form>
+
+    <div id="output"></div>
+    <!-- <script src="logic.js"></script> -->
+</body>
+
+</html>
