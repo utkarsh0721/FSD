@@ -34,5 +34,5 @@ function Login(){
 
 }
 
-export default 
+export default Login;
 
